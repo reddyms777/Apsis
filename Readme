@@ -1,0 +1,6 @@
+Go to codebase  directory  and run below command
+spring-boot:run
+Base URL to open the project in local
+http://localhost:8080/counterTest.html
+
+If we want to deploy in any aws servers needs to change the URL in counterTest.html
