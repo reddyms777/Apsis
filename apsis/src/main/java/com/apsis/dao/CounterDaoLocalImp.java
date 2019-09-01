@@ -16,6 +16,7 @@ public class CounterDaoLocalImp implements CounterDao{
 	
 	@Override
 	public Counter save(Counter counter) {
+		//counter.setValue(1l);
 		counters.put(counter.getCounterName(), counter);
 		return counter; 
 	}

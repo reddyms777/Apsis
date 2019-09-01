@@ -211,7 +211,7 @@ $(document).ready(function(){
 		 var requestData = "counterName=" + counterNameValue;
 		 $.ajax({
              type: "POST",
-             url: "http://localhost:8080/counter/create",
+             url: "http://localhost:9090/counter/create",
              data: requestData,
              success: function (data) {
             	 if (data.data) {
@@ -245,7 +245,7 @@ $(document).ready(function(){
 		 var requestData = "counterName=" + counterNameValue;
 		 $.ajax({
             type: "GET",
-            url: "http://localhost:8080/counter/" + counterNameValue,
+            url: "http://localhost:9090/counter/" + counterNameValue,
             //data: requestData,
             success: function (data) {
            	 if (data.data) {
@@ -279,7 +279,7 @@ $(document).ready(function(){
 		 var requestData = "counterName=" + counterNameValue;
 		 $.ajax({
              type: "POST",
-             url: "http://localhost:8080/counter/increase",
+             url: "http://localhost:9090/counter/increase",
              data: requestData,
              success: function (data) {
             	 if (data.data) {
@@ -307,7 +307,7 @@ $(document).ready(function(){
 	$("#getAllCountersButton").click(function(){
 		 $.ajax({
             type: "GET",
-            url: "http://localhost:8080/counter/",
+            url: "http://localhost:9090/counter/",
             success: function (data) {
            	 if (data.data) {
            		$("#spanCounterName").hide();
